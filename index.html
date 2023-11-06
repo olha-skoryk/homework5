@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <article class="register">
+    <header class="header">
+      <h1 class="title">Register</h1>
+      <p class="text">Create your account. It`s free and only takes a minute.</p>
+    </header>
+
+
+    <form class="form">
+      <fieldset class="one-line">
+        <input class="line" name="first-name" placeholder="First Name" type="text" required>
+        <input class="line" name="last-name" placeholder="Last Name" type="text" required>
+      </fieldset>
+
+
+      <input class="line" name="email" placeholder="Email" type="email" required
+        pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+
+      <input class="line" name="password" placeholder="Password" type="password" required
+        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+
+      <input class="line" name="confirm-password" placeholder="Confirm Password" type="password" required
+        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+
+      <label class="line checkbox">
+        <input name="consent" type="checkbox" required>
+        I accept the
+        <a class="link" href="#">Terms of Use</a> &
+        <a class="link" href="#">Privacy Policy</a>.
+      </label>
+
+      <button class="button line" type="submit">Register Now</button>
+    </form>
+  </article>
+</body>
+
+</html>
