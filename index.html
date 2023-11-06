@@ -17,22 +17,17 @@
       <p class="text">Create your account. It`s free and only takes a minute.</p>
     </header>
 
-
     <form class="form">
       <fieldset class="one-line">
         <input class="line" name="first-name" placeholder="First Name" type="text" required>
         <input class="line" name="last-name" placeholder="Last Name" type="text" required>
       </fieldset>
 
+      <input class="line" name="email" placeholder="Email" type="email" required pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
 
-      <input class="line" name="email" placeholder="Email" type="email" required
-        pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+      <input class="line" name="password" placeholder="Password" type="password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
 
-      <input class="line" name="password" placeholder="Password" type="password" required
-        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
-
-      <input class="line" name="confirm-password" placeholder="Confirm Password" type="password" required
-        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
+      <input class="line" name="confirm-password" placeholder="Confirm Password" type="password" required pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$">
 
       <label class="line checkbox">
         <input name="consent" type="checkbox" required>
